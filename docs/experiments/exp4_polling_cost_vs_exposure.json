@@ -1,0 +1,79 @@
+{
+  "experiment": "exp4_polling_cost_vs_exposure",
+  "unattested_baseline": {
+    "wrong_weights_replica_steps": 600,
+    "wrong_weights_requests": 6000
+  },
+  "knee_of_curve": {
+    "recommended_audit_interval_steps": 5,
+    "audit_calls_made": 672,
+    "wrong_weights_requests": 1100,
+    "exposure_reduction_pct": 81.67,
+    "requests_saved_per_audit_call": 7.29
+  },
+  "sweep_table": [
+    {
+      "audit_interval_steps": 1,
+      "audit_calls_made": 3344,
+      "wrong_weights_replica_steps": 40,
+      "wrong_weights_requests": 400,
+      "requests_saved_vs_unattested": 5600,
+      "exposure_reduction_pct": 93.33,
+      "requests_saved_per_audit_call": 1.67
+    },
+    {
+      "audit_interval_steps": 2,
+      "audit_calls_made": 1600,
+      "wrong_weights_replica_steps": 80,
+      "wrong_weights_requests": 800,
+      "requests_saved_vs_unattested": 5200,
+      "exposure_reduction_pct": 86.67,
+      "requests_saved_per_audit_call": 3.25
+    },
+    {
+      "audit_interval_steps": 4,
+      "audit_calls_made": 800,
+      "wrong_weights_replica_steps": 136,
+      "wrong_weights_requests": 1360,
+      "requests_saved_vs_unattested": 4640,
+      "exposure_reduction_pct": 77.33,
+      "requests_saved_per_audit_call": 5.8
+    },
+    {
+      "audit_interval_steps": 5,
+      "audit_calls_made": 672,
+      "wrong_weights_replica_steps": 110,
+      "wrong_weights_requests": 1100,
+      "requests_saved_vs_unattested": 4900,
+      "exposure_reduction_pct": 81.67,
+      "requests_saved_per_audit_call": 7.29
+    },
+    {
+      "audit_interval_steps": 8,
+      "audit_calls_made": 320,
+      "wrong_weights_replica_steps": 248,
+      "wrong_weights_requests": 2480,
+      "requests_saved_vs_unattested": 3520,
+      "exposure_reduction_pct": 58.67,
+      "requests_saved_per_audit_call": 11.0
+    },
+    {
+      "audit_interval_steps": 10,
+      "audit_calls_made": 320,
+      "wrong_weights_replica_steps": 200,
+      "wrong_weights_requests": 2000,
+      "requests_saved_vs_unattested": 4000,
+      "exposure_reduction_pct": 66.67,
+      "requests_saved_per_audit_call": 12.5
+    },
+    {
+      "audit_interval_steps": 20,
+      "audit_calls_made": 160,
+      "wrong_weights_replica_steps": 600,
+      "wrong_weights_requests": 6000,
+      "requests_saved_vs_unattested": 0,
+      "exposure_reduction_pct": 0.0,
+      "requests_saved_per_audit_call": 0.0
+    }
+  ]
+}

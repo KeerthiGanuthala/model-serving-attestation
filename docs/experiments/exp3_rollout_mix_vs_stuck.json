@@ -1,0 +1,74 @@
+{
+  "experiment": "exp3_rollout_mix_vs_stuck",
+  "grid_results": [
+    {
+      "fleet_size": 4,
+      "max_surge": 1,
+      "max_unavailable": 0,
+      "readiness_delay_steps": 1,
+      "spec_expected_window_steps": 8,
+      "observed_rollout_completion_step": 8,
+      "window_matches_spec": true,
+      "false_alarms_raised": 0
+    },
+    {
+      "fleet_size": 8,
+      "max_surge": 1,
+      "max_unavailable": 0,
+      "readiness_delay_steps": 1,
+      "spec_expected_window_steps": 16,
+      "observed_rollout_completion_step": 16,
+      "window_matches_spec": true,
+      "false_alarms_raised": 0
+    },
+    {
+      "fleet_size": 8,
+      "max_surge": 2,
+      "max_unavailable": 0,
+      "readiness_delay_steps": 1,
+      "spec_expected_window_steps": 8,
+      "observed_rollout_completion_step": 8,
+      "window_matches_spec": true,
+      "false_alarms_raised": 0
+    },
+    {
+      "fleet_size": 8,
+      "max_surge": 2,
+      "max_unavailable": 1,
+      "readiness_delay_steps": 1,
+      "spec_expected_window_steps": 6,
+      "observed_rollout_completion_step": 6,
+      "window_matches_spec": true,
+      "false_alarms_raised": 0
+    },
+    {
+      "fleet_size": 12,
+      "max_surge": 2,
+      "max_unavailable": 1,
+      "readiness_delay_steps": 1,
+      "spec_expected_window_steps": 8,
+      "observed_rollout_completion_step": 8,
+      "window_matches_spec": true,
+      "false_alarms_raised": 0
+    },
+    {
+      "fleet_size": 16,
+      "max_surge": 4,
+      "max_unavailable": 0,
+      "readiness_delay_steps": 1,
+      "spec_expected_window_steps": 8,
+      "observed_rollout_completion_step": 8,
+      "window_matches_spec": true,
+      "false_alarms_raised": 0
+    }
+  ],
+  "all_grid_windows_match_spec": true,
+  "stalled_vs_slow_comparison": {
+    "stalled_rollout_spec_window_steps": 16,
+    "stalled_after_waves": 3,
+    "stalled_first_detected_step": 17,
+    "stalled_replica_attestation_age_at_detection": 17,
+    "slow_rollout_spec_window_steps": 24,
+    "slow_rollout_false_alarms_at_step_17": 0
+  }
+}

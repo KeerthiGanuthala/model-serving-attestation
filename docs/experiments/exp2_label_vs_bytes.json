@@ -1,0 +1,46 @@
+{
+  "experiment": "exp2_label_vs_bytes",
+  "registry_backends_verified": [
+    "mlflow-filestore",
+    "minimal"
+  ],
+  "backends_agree": true,
+  "summary": {
+    "total_failure_modes": 3,
+    "registry_api_caught_count": 0,
+    "disk_precheck_caught_count": 1,
+    "in_process_attestation_caught_count": 3
+  },
+  "claim_vs_evidence_table": [
+    {
+      "failure_mode": "alias_repointed_without_reload",
+      "claim_inspected": "Registry alias pointer (`production` -> `v2`, status `READY`)",
+      "registry_api_expresses_question": true,
+      "registry_api_proves_loaded_bytes": false,
+      "disk_precheck_catches": false,
+      "in_process_attestation_catches": true,
+      "canonical_sha256_prefix": "da27bab773aa",
+      "loaded_sha256_prefix": "cce6e7a2a672"
+    },
+    {
+      "failure_mode": "content_mutated_under_unchanged_label",
+      "claim_inspected": "Unchanged version label (`v2`, status `READY`) over mutated file",
+      "registry_api_expresses_question": false,
+      "registry_api_proves_loaded_bytes": false,
+      "disk_precheck_catches": true,
+      "in_process_attestation_catches": true,
+      "canonical_sha256_prefix": "da27bab773aa",
+      "loaded_sha256_prefix": "9491dd9c6f05"
+    },
+    {
+      "failure_mode": "toctou_mutation_between_check_and_load",
+      "claim_inspected": "Pre-load file SHA-256 on disk vs in-process buffer SHA-256",
+      "registry_api_expresses_question": false,
+      "registry_api_proves_loaded_bytes": false,
+      "disk_precheck_catches": false,
+      "in_process_attestation_catches": true,
+      "canonical_sha256_prefix": "5f88f0d2fb46",
+      "loaded_sha256_prefix": "5b5f7ec6fd09"
+    }
+  ]
+}
